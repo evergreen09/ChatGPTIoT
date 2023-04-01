@@ -6,7 +6,7 @@ def clean_string(text):
     return re.sub(r"[',]", "", text)
 
 # Read the HTML content from a file
-file_path = 'ny1.html'  # Replace with the actual file path
+file_path = 'ny2.html'  # Replace with the actual file path
 with open(file_path, 'r', encoding='utf-8') as file:
     html_content = file.read()
 
