@@ -26,5 +26,6 @@ print("Cleaned text data:", text_data)
 csv_file_path = 'output.csv'  # Replace with the desired CSV file path
 with open(csv_file_path, 'w', newline='', encoding='utf-8') as csvfile:
     csv_writer = csv.writer(csvfile)
-    for text in text_data:
-        csv_writer.writerow([text, ''])
+    combined_text_data = ' '.join(text_data)
+    csv_writer.writerow([combined_text_data])
+
