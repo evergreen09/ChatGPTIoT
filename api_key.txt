@@ -1,2 +1,0 @@
-api = ""
-secret = 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
