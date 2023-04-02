@@ -1,6 +1,6 @@
 import requests
 import csv
-from bs4 import BeautifulSoup
+from bsbs import BeautifulSoup
 
 api_key = '0P1GMF6NdTmYEmAyxDPGH1SwvOpYv2QJ'
 url = 'https://api.nytimes.com/svc/topstories/v2/home.json?api-key=' + api_key

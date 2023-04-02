@@ -3,7 +3,7 @@ import openai
 import json
 
 # Load your API key from an environment variable or secret management service
-openai.api_key = ''
+openai.api_key = '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'
 csv_file_path = 'output.csv'  # Replace with the actual file path
 
 
@@ -20,7 +20,7 @@ print("CSV data as string:", csv_data_string)
 response = openai.ChatCompletion.create(
   model="gpt-3.5-turbo",
   messages=[
-        {"role": "system", "content": "You are a helpful assistant that summarizes news article for Traders."},
+        {"role": "system", "content": "You are a helpful assistant that summarizes news article in 200~400 words for busy Traders."},
         {"role": "user", "content": csv_data_string + "\n\nSummarize this with concise language and a clearer structure"}
     ]
 )
