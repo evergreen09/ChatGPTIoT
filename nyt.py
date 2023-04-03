@@ -1,6 +1,6 @@
 import requests
 import csv
-from bsbs import BeautifulSoup
+from bs4 import BeautifulSoup
 
 api_key = '0P1GMF6NdTmYEmAyxDPGH1SwvOpYv2QJ'
 url = 'https://api.nytimes.com/svc/topstories/v2/home.json?api-key=' + api_key
@@ -37,4 +37,4 @@ with open('nyt_top_stories_with_text.csv', mode='w', newline='', encoding='utf-8
             'article_text': article_text
         })
 
-print('NYT top stories with text saved to nyt_top_stories_with_text.csv')
+print('output.csv')

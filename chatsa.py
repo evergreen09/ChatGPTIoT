@@ -3,7 +3,7 @@ import openai
 import json
 
 # Load your API key from an environment variable or secret management service
-openai.api_key = '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'
+openai.api_key = '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'
 csv_file_path = 'output.csv'  # Replace with the actual file path
 
 
